@@ -1,3 +1,3 @@
 jQuery-OnOff
 ============
-version 1
+replace checkbox in iphone style

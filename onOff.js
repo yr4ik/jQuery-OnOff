@@ -1,4 +1,3 @@
-
 /*!	* jQuery onOff plugin	*
 	*	replace checkbox in iphone style
 	*	(c)2013 Polevik Yuriy yr4ik_07@ukr.net	*

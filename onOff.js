@@ -3,7 +3,7 @@
 	*	(c)2013 Polevik Yuriy yr4ik_07@ukr.net	*
 */
 
-$.fn.onOff = function(){
+$.fn.onOff = function(opt){
 
  	var opt = $.extend({
 		lefttext: 'ON',

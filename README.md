@@ -1,4 +1,4 @@
-jQuery-OnOff
+jQuery OnOff Button Plugin
 ============
 Replace checkbox in iphone style.
 

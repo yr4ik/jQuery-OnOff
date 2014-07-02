@@ -1,6 +1,7 @@
+
 /*!	* jQuery onOff plugin	*
 	*	replace checkbox in iphone style
-	*	(c)2013 Polevik Yuriy yr4ik_07@ukr.net	*
+	*	(c) Polevik Yuriy yr4ik_07@ukr.net	*
 */
 
 $.fn.onOff = function(opt){
@@ -23,10 +24,10 @@ $.fn.onOff = function(opt){
 	}
 	
 	return this.each(function(){
-		var checkbox = $(this).hide();
+		var checkbox = $(this);
 		if(checkbox.is(':checkbox')){
 			
-			var box = $('<div class="'+opt.boxClass+'"></div>').insertAfter(checkbox),
+			var box = $('<div class="'+opt.boxClass+'"></div>').insertAfter(checkbox).attr('style', checkbox.attr('style')),
 			pb = $('<div/>').appendTo(box).css('position', 'absolute'), 
 			on = $('<span class="onOff-left">'+opt.lefttext+'</span>').appendTo(pb),
 			slide = $('<div class="onOff-slide"></div>').appendTo(pb).css('position', 'absolute'), 
@@ -37,6 +38,8 @@ $.fn.onOff = function(opt){
 			offw = off.width(),
 			stop = false;
 
+			checkbox.hide();
+			
 			if(onw>offw) off.width(onw); else if(onw<offw) on.width(offw);
 			
 			box.width(witem+wslide-2);
